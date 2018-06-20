@@ -1,0 +1,189 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.all;
+
+entity comb_ckt is 
+port( inputA: in std_logic;
+      inputB: in std_logic;
+      inputC: out std_logic
+);
+
+end comb_ckt;
+
+architecture struct of comb_ckt is
+
+component AND_GATE is
+port( A: in std_logic;
+      B: in std_logic;
+      F1: out std_logic
+);
+end component;
+
+component OR_GATE is X
+port( X: in std_logic;
+      Y: in std_logic;
+      F2: out std_logic
+);
+end component;
+ 
+signal wire: std_logic;
+begin
+
+    GATEA: AND_GATE port map (A => inputA, B => inputB, F1 => wire);
+    GATEB: OR_GATE port map  (X => wire, Y => inputC, F2 => output);
+
+end struct;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
