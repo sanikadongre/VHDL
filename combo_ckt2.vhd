@@ -85,7 +85,7 @@ begin
 
 Gate1: OR_GATE port map( A=> input1, B => input2, F1 => wire );
 Gate2: XOR_GATE port map( F1 => wire, C => input2, F2 => wire);
-Gate3: AND_GATE port map( F2 => wire, B=> input, F3 => wire);
+Gate3: AND_GATE port map( F2 => wire, B=> input, F3 => output);
 
 end struct;
       
